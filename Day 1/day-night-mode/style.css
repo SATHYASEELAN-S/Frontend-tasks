@@ -1,0 +1,59 @@
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.switch{
+  position:relative;
+  display:inline-block;
+  width:60px;
+  height:34px;
+}
+
+input{
+  opacity:0;
+  width:0;
+  height:0;
+}
+
+.slider{
+  position:absolute;
+  cursor:pointer;
+  inset:0;
+  background-color:#ccc;
+  border-radius:25px;
+  transition: 0.4s;
+}
+
+.slider:before{
+  width:26px;
+  height:26px;
+  background-color:white;
+  border-radius:50%;
+  position:absolute;
+  left: 4px;
+  bottom: 4px;
+  content:"";
+  transition:0.4s;
+  background-image: url("./assests/moon.svg");
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+input:checked +.slider{
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before{
+  transform :translateX(26px);
+   background-color:black;
+   background-image: url("./assests/clear.png");
+   background-position:0px -2px;
+ 
+}
+input:checked ~ .container{
+    background-color: #111111;
+}
