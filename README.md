@@ -4,7 +4,8 @@
   - Task 2 - [Live link](https://sathya-daynightmode.netlify.app/)
 - [x] [Day 2](Day2/)
     - Task 1 - [Live link](https://sathya-socialmedialinks.netlify.app/)
-    - Task 2 
-- [ ] ...
+    - Task 2
+- [ ] [Day 3](Day%203/)
+    - Task 1 (not yet completed)
 - [ ] ...
 - [ ] Day 100 - soon
