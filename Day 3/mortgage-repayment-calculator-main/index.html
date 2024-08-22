@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Mortgage repayment calculator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="row1">
+          <div class="title-row">
+            <h2>Mortgage Calculator</h2>
+            <button class="clear-btn">Clear All</button>
+          </div>
+          <div class="form">
+            <form action="">
+              <label for="mortgage-amount">Mortgage Amount</label>
+              <div class="error currency-error">
+              <div class="input input-currency">
+                <input type="number" id="currency-symbol" placeholder="Enter the amount" />
+                <span class="currency-symbol symbol">₹</span>
+              </div>
+             
+            </div>
+              <div class="calculation">
+                <div class=" years-error error">
+                 
+                  <label for="mortgage-term" class="label">Mortgage Term</label>
+                  <div class="input input-years">
+                    <input type="number" id="years-symbol" placeholder="Enter year" />
+                    <span class="years-symbol symbol">years</span>
+                  </div>
+                 
+                </div>
+
+                <div class=" rate-error error">
+                  <label for="interest-rate" class="label">Interest Rate</label>
+                  <div class="input input-rate">
+                    <input type="number" id="rate-symbol" placeholder="Enter Interest Rate" />
+                    <span class="rate-symbol symbol">Rate</span>
+                  </div>
+                </div>
+                
+              </div>
+
+              <div class="error  radio-error">
+
+             
+              <label for="repayment">Mortgage Type</label>
+                <div class="input-radio">
+                  <label for="repayment" class="input-Repayment">
+                     <input type="radio" id="repayment" name="option" value="Repayment"> Repayment
+                  </label>
+                  <label for="interest"  class="input-interest" >
+                    <input type="radio"id="interest" name="option" value="interest">interest
+                  </label>
+                </div>
+              </div>
+                <button class="calculate-btn" type="submit" id="calulate">Calculate Repayments</button>
+
+            </form>
+
+          </div>
+        </div>
+
+        <div class="row2"></div>
+      </div>
+    </div>
+
+
+<script src="./script.js"></script>
+
+    <!-- 
+  Clear All
+
+  
+
+  Mortgage Term
+
+  Interest Rate
+
+  Mortgage Type
+  Repayment
+  Interest Only
+
+
+  <!-- Empty results start 
+
+  Results shown here
+
+  Complete the form and click “calculate repayments” to see what 
+  your monthly repayments would be.
+
+  <!-- Empty results end -->
+
+    <!-- Completed results start
+
+  Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  <!-- Total you'll repay over the term  -->
+  </body>
+</html>

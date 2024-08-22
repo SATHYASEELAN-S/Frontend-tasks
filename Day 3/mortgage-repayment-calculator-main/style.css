@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    background-color:  hsl(202, 86%, 94%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.content{
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-direction: row;
+    height: auto;
+    background-color:white;
+    border-radius: 20px;
+}
+
+.row1
+{
+    width: 50%;
+    margin: 0px 20px ;
+    /* background-color: yellowgreen;? */
+}
+.title-row h2{
+    float: left;
+}
+.title-row button{
+    box-shadow: none;
+    border: 0;
+    color: hsl(200, 26%, 54%);
+    font-size: 14px;
+    font-weight: 500;
+    float: right;
+    margin-top: 30px;
+    text-decoration: underline;
+    background-color: white  ;
+}
+
+.form{
+    clear: both;
+}
+
+.form input::-webkit-outer-spin-button,
+.form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form input{
+    width: 100%;
+    color: hsl(202, 55%, 16%);
+    box-sizing: border-box;
+}
+
+label{
+    color: hsl(200, 26%, 54%);
+    font-size: 14px;
+    font-weight: 500;
+}
+.input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+small{
+    display: block;
+    margin-top:10px;
+    font-weight: 500;
+    color: hsl(4, 69%, 50%);
+}
+.error{
+    
+    margin-bottom: 20px;
+}
+
+.currency-symbol,.years-symbol,.rate-symbol{
+    position: absolute;
+    height: 95%;
+    padding:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* width: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  hsl(202, 86%, 94%);
+    color: hsl(200, 26%, 54%);
+    font-weight: 500; 
+    transition: 0.3s ease;
+}
+.currency-symbol{
+    left:1px;
+    border-radius: 5px 0 0 5px ;
+}
+.rate-symbol,.years-symbol{
+    right:1px;
+    border-radius: 0px 5px 5px 0px ;
+}
+
+
+.form input[type="number"]{
+    border-radius: 5px;
+  
+    font-size: 16px;
+    padding: 12px 12px 12px 12px ;
+    border: 1px solid black;
+    outline: none;
+    font-weight: 700; 
+    transition: border-color 0.3s ease;
+}
+.input-currency input[type="number"]{
+    padding-left: 40px ;
+}
+.form input[type="number"]:focus, .form input:hover{
+    outline: none;
+    font-weight: 700; 
+    border-color: hsl(61, 70%, 52%);
+}
+.form input[type="number"]:focus + .symbol,.form input[type="number"]:hover + .symbol{
+    background-color: hsl(61, 70%, 52%); 
+    color: hsl(202, 55%, 16%);
+    font-weight: 700; 
+    height: 100%;
+}
+
+.form input[type="number"]:focus + .rate-symbol,.form input[type="number"]:hover + .rate-symbol{
+    background-color: hsl(61, 70%, 52%); 
+    color: hsl(202, 55%, 16%);
+    font-weight: 700; 
+    right: 0;
+    height: 100%;
+}
+
+
+.calculation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.calculation .input-rate{
+    margin-left:5px;
+  
+}
+
+.calculation .input-years{
+    margin-right:5px;
+}
+
+
+input[type="radio"] {
+    accent-color:  hsl(61, 70%, 52%);
+    background-color: #ffffff; 
+    border: 2px solid  hsl(61, 70%, 52%); 
+    width: 20px;
+    height: 20px;
+  appearance: none; 
+    border-radius: 50%; 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    display: block;
+    width: 12px; 
+    height: 12px;
+    background-color:  hsl(61, 70%, 52%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-radio{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    flex-direction: column;
+
+    justify-content: start;
+}
+
+.input-radio label{
+    margin-bottom:1;
+    color: hsl(202, 55%, 16%);
+
+}
+
+.input-interest, .input-Repayment {
+    border: 1px solid black;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 700;
+   
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 5px;
+    display: flex;
+  
+    flex-direction: row;
+    border: 1px solid black;
+    outline: none;
+}
+.input-interest:hover, .input-Repayment:hover{
+    outline: none;
+    
+    border-color: hsl(61, 70%, 52%);
+}
+
+
+
+
+
+input{
+    cursor: pointer;
+}
+
+.calculate-btn{
+    margin-top: 30px;
+    width: 70%;
+    border-radius: 40px;
+    padding: 15px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(202, 55%, 16%);
+    text-align: center;
+    background-image: url(./assets/images/icon-calculator.svg);
+    background-repeat: no-repeat;
+    background-position: 50px center;
+    background-color:  hsl(61, 70%, 52%);;
+    margin-bottom: 40px;
+}
+
+.calculate-btn:hover{
+    
+    background-color: hsl(60, 72%, 93%);
+
+}
+
+ 
+.row2{
+    width: 50%;
+    border-radius: 0px 20px 20px 200px;
+    background-color:  hsl(202, 55%, 16%);
+ 
+} 
+
+
