@@ -5,7 +5,10 @@
 - [x] [Day 2](Day2/)
     - Task 1 - [Live link](https://sathya-socialmedialinks.netlify.app/)
     - Task 2 - completed
-- [ ] [Day 3](Day%203/)
+- [x] [Day 3](Day%203/)
     - Task 1 - completed
-- [ ] ...
+- [x] [Day 4](Day%204/)
+    - Task 1 - Completed
+    - Task 2 - completed
+    - Task 3 - completed
 - [ ] Day 100 - soon
