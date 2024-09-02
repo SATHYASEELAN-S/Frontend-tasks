@@ -1,0 +1,30 @@
+
+body{
+  background-color:#151917;
+  height: 100vh;
+}
+body,.circle{
+  justify-content:center;
+  align-items:center;
+  display:flex;
+}
+.circle.c {
+  width: 250px;
+  height: 250px;
+  border-radius:100%;
+  background: #D83A34;
+}
+.inner-circle{
+   width: 210px;
+  height: 210px;
+  border-radius:100%;
+  background: #151917;
+}
+.square{
+   width: 30px;
+  height:0;
+  border-left:49px solid transparent;
+  border-right:49px solid transparent;
+  border-top:69px solid #D83A34;
+  border-bottom:69px solid #D83A34;
+}

@@ -1,0 +1,32 @@
+
+body{
+    background:#70CEAF;
+    height: 100vh;
+  }
+  body,.circle{
+    justify-content:center;
+    align-items:center;
+    display:flex;
+
+  }
+  .circle{
+    width:230px;
+    height:230px;
+    outline:25px solid  #0E532F;
+    border-radius:100%;
+  }
+  .box{
+    width:140px;
+    height:110px;
+    border-top:25px solid#0E532F  ;
+    border-bottom:25px solid  #0E532F;
+    border-radius:0%;    
+    position:fixed;
+  }
+  .boxinnerc{ 
+    width:90px;    
+    background:#70CEAF;
+    outline:25px solid  #0E532F;
+    height:90px;
+    border-radius:100%;    
+  }

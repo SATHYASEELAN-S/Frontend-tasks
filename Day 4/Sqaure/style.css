@@ -1,0 +1,29 @@
+
+body{
+  padding:relative;
+   background-color:#B6EBE7;
+ }
+
+
+.outside{
+  position:absolute;
+   top:50px;
+   left:100px;
+}
+ .square {
+   width: 200px;
+   height: 200px;
+   background: #9382E4;
+ }
+ .square.rotate{
+   transform:rotate(45deg);
+   display:flex;
+   justify-content:center;
+   align-items:center;
+ }
+ .inside-sq{
+   background-color:#B6EBE7;
+   width:100px;
+   height:100px;
+   transform:rotate(45deg);
+ }
