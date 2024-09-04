@@ -15,6 +15,6 @@
     - Task 1 - Completed
     - Task 2 - completed
     - Task 3 - completed
-     
-      
+- [ ] ...
+- [ ] ...  
 - [ ] Day 100 - soon
