@@ -1,0 +1,18 @@
+
+  body,.c.empty{
+    background-color:#F3F3F3;
+  }
+  .container,body, .segment{
+      display:flex;
+    justify-content:center;
+    align-items:center;
+  } 
+  .container{
+    background:#C64F4F;
+    flex-direction:column;
+  }
+  .c{
+    width:50px;
+    height:50px;
+    background:#C64F4F;
+  }
